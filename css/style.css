@@ -1,0 +1,38 @@
+body{
+  background-image: url("https://t4.ftcdn.net/jpg/01/25/65/23/240_F_125652309_EIGZktnQSOidQgy51fZJrRASTXePQS3U.jpg");
+  background-size: auto 100vh;
+  font-family: Arial;
+  height: 100vh;
+}
+
+.menu{
+  background-color: white;
+}
+
+.menu ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: teal;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.site-subtitle,
+.site-title{
+  color: whitesmoke;
+  text-align: center;
+}
+
+.site-subtitle{
+  font-style: italic;
+}
