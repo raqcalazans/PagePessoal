@@ -1,12 +1,53 @@
+/* soft reset do css */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
-  background-image: url("https://t4.ftcdn.net/jpg/01/25/65/23/240_F_125652309_EIGZktnQSOidQgy51fZJrRASTXePQS3U.jpg");
+  background-color: #3065AC;
   background-size: auto 100vh;
-  font-family: Arial;
+  color: whitesmoke;
+  font-family: 'Montserrat Alternates', sans-serif;
   height: 100vh;
+  font-size: 12px;
+}
+
+/* se a tela tiver pelo menos 400px vai carregar esses estilos */
+@media(min-width: 400px){
+  body{
+    font-size: 14px;
+  }
+}
+
+/* breakpoint */
+@media(min-width: 600px){
+  body{
+    font-size: 18px;
+  }
+}
+
+/* breakpoint */
+@media(min-width: 600px){
+  body{
+    font-size: 18px;
+  }
+}
+
+header{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu{
   background-color: white;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  z-index: 1;
 }
 
 .menu ul{
@@ -18,13 +59,39 @@ body{
   list-style: none;
 }
 
-a{
-  text-decoration: none;
-  color: teal;
+.menu a{
+  display: block;
+  padding: 10px 20px;
+  transition: background-color 1s, color 1s;
 }
 
-a:hover{
-  text-decoration: underline;
+.menu a:active,
+.menu a:hover{
+  background-color: #3065AC;
+  color: white;
+}
+
+a{
+  color: #3065AC;
+  text-decoration: none;
+}
+
+.titulo{
+  transform: scale(0.2) translateY(50vh);
+  opacity: 0;
+
+  animation: 1s linear 2s animacaoTitulo forwards;
+}
+
+@keyframes animacaoTitulo{
+  from{
+    transform: scale(0.2) translateY(50vh);
+    opacity: 0;
+  }
+  to{
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
 }
 
 .site-subtitle,
@@ -33,6 +100,84 @@ a:hover{
   text-align: center;
 }
 
+.site-title{
+  font-size: 3em;
+  font-family: 'Charmonman', cursive;
+}
+
 .site-subtitle{
   font-style: italic;
+}
+
+.contato,
+.portfolio{
+  padding: 2em;
+  min-height: 100vh;
+}
+
+.contato h2,
+.portfolio h2{
+  color: whitesmoke;
+  margin-bottom: 1.5em;
+  font-size: 2em;
+}
+
+.portfolio .grid{
+  display: grid;
+  gap: 2em;
+}
+
+@media(min-width: 700px){
+  .portfolio .grid{
+    grid-template-columns: repeat(2, 350px);
+    justify-content: center;
+  }
+}
+
+@media(min-width: 1000px){
+  .portfolio .grid{
+    grid-template-columns: repeat(3, 350px);
+    justify-content: center;
+    align-content: center;
+    height: calc(100vh - 4em - 48px - 1.5em);
+  }
+}
+
+.portfolio figure{
+  text-align: center;
+}
+
+.img-portfolio{
+  height: 180px;
+  width: 240px;
+  object-fit: cover;
+  /* object-position: left bottom; */
+  transform: scale(1);
+  transition: transform 500ms;
+}
+
+.img-portfolio:hover{
+  transform: scale(1.3);
+}
+
+/* @media(min-width: 1200px){
+  .img-portfolio{
+    height: 10em;
+    width: auto;
+  }
+} */
+.contato .icons{
+  text-align: center;
+}
+
+.contato a{
+  color: whitesmoke;
+  font-size: 5em;
+  transition: text-shadow 1s;
+}
+
+.contato a:active,
+.contato a:hover{
+  text-decoration: none;
+  text-shadow: 0px 0px 50px rgba(255, 255, 255, 0.8);
 }
