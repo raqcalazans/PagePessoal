@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -15,40 +15,120 @@
 <body>
   <header>
     <nav class="menu">
-      <ul>
+      <ul class="container">
+        <li><a href="#home"><i class="fas fa-home"></i></a></li>
         <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#portifolio">Portifólio</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
+  </header>
+
+  <section class="banner" id="home">
     <div class="titulo">
       <h1 class="site-title">Raquel Calazans</h1>
       <h2 class="site-subtitle">jr. frontend developer</h2>
     </div>
-  </header>
-  <section class="portfolio" id="portifolio">
+  </section>
+
+  <section class="sobre container" id="sobre">
+    <h2>Sobre</h2>
+    <!-- <figure class="avatar">
+      <img src="https://pbs.twimg.com/profile_images/1259154864627646464/J9oXqlm0_400x400.jpg" alt="Raquel Calazans">
+    </figure> -->
+
+    <p>
+      Baiana, filha de cariocas, irmã de capixabas, neta de cearense e atualmente moro em Minas Gerais, terra da minha
+      avó paterna.
+    </p>
+
+    <p>
+      Sou uma pessoa que sonha em causar impacto positivo na vida das pessoas, por isso sou muito dedicada em tudo que
+      faço. Vejo a programação como uma oportunidade de sempre aprender coisas novas e ter ferramentas para criar o que
+      minha imaginação permitir.
+    </p>
+
+    <p>
+      Toco violão. Medito todos os dias. Cuido das minhas plantinhas. Comecei a estudar
+      programação no começo de 2019 quando entrei no curso técnico de Desenvolvimento de Sistemas do <a
+        href="http://www.coltec.ufmg.br/coltec-ufmg/">Coltec UFMG</a>. Quando criança fui medalhista de natação.
+      Participava de uma fogueira mensal de mulheres, antes da quarentena acabar com a nossa graça. Corria quase todo os
+      dias, hoje me exercito em casa.
+    </p>
+
+    <p>
+      Este site foi construído durante a <a href="https://www.alura.com.br/imersao-css">Imersão CSS da Alura</a>.
+    </p>
+
+  </section>
+  <section class="portfolio container" id="portfolio">
     <h2>Portfólio</h2>
     <div class="grid">
-      <figure>
-        <img class="img-portfolio" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg" alt="eCommerce">
-        <figcaption>eCommerce</figcaption>
-      </figure>
-      <figure>
-        <img class="img-portfolio" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
-        <figcaption>Mobile</figcaption>
-      </figure>
-      <figure>
-        <img class="img-portfolio" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="Web design">
-        <figcaption>Web design</figcaption>
-      </figure>
-      <figure>
-        <img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg" alt="Projetos pessoais">
-        <figcaption>Projetos pessoais</figcaption>
-      </figure>
+      <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
+            <img class="img-portfolio" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg" alt="eCommerce">
+            <figcaption>eCommerce</figcaption>
+          </figure>
+          <div class="card-back">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vero dolorem, cum eaque natus nostrum
+              velit.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
+            <img class="img-portfolio" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
+            <figcaption>Mobile</figcaption>
+          </figure>
+          <div class="card-back">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vero dolorem, cum eaque natus nostrum
+              velit.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
+            <img class="img-portfolio" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="Web design">
+            <figcaption>Web design</figcaption>
+          </figure>
+          <div class="card-back">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vero dolorem, cum eaque natus nostrum
+              velit.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
+            <img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg"
+              alt="Projetos pessoais">
+            <figcaption>Projetos pessoais</figcaption>
+          </figure>
+          <div class="card-back">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vero dolorem, cum eaque natus nostrum
+              velit.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-  <section class="contato" id="contato">
-    <h2>Contato</h2>
+
+  <footer class="contato container" id="contato">
+    <!-- <h2>Contato</h2> -->
     <div class="grid icons">
       <a target="_blank" href="https://github.com/raqcalazans">
         <i class="fab fa-github-alt"></i>
@@ -62,8 +142,16 @@
       <a href="https://instagram.com/raquelcalazans_">
         <i class="fab fa-instagram"></i>
       </a>
+      <a target="_blank" href="mailto:raqcalazans@gmail.com">
+        <i class="fas fa-envelope"></i>
+      </a>
     </div>
-  </section>
+    
+    <div class="copyright">
+      <p>Copyright 2020 - Feito por Raquel Calazans</p>
+    </div>
+  </footer>
+
 </body>
 
 </html>
