@@ -7,12 +7,9 @@
 
 body {
   background-color: #3065AC;
-  /* background-color: rgb(1, 1, 65); */
   background-size: auto 100vh;
   color: whitesmoke;
   font-family: 'Montserrat Alternates', sans-serif;
-  /* height: 100vh;
-  font-size: 12px; */
 }
 
 /* se a tela tiver pelo menos 400px vai carregar esses estilos */
@@ -97,7 +94,6 @@ a {
 } */
 
 .banner{
-  /* background-image: url("https://www.osmais.com/wallpapers/201206/natureza-magnifica-wallpaper.jpg"); */
   background-image: url(../img/raquelcalazans.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -125,6 +121,18 @@ a {
 .site-subtitle {
   font-style: italic;
 }
+
+/*.sobre{
+  background-color: #3065AC;
+}
+
+.portfolio{
+  background-color: rgb(1, 1, 65);
+}
+
+.contato{
+  background-color: lightcoral;
+}*/
 
 .sobre,
 .contato,
@@ -196,7 +204,7 @@ a {
 .flip-card {
   height: 180px;
   perspective: 1000px;
-  padding-bottom: 215px;
+  padding-bottom: 220px;
 }
 
 .flip-card:hover .card {
@@ -205,7 +213,6 @@ a {
 
 .card {
   position: relative;
-  /* color: black; */
   transform-style: preserve-3d;
   transition: transform 3s;
 }
