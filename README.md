@@ -1,2 +1,2 @@
 # projetoalura
-Site criado na imersão css da Alura 
+Site criado na imersão CSS da Alura 
