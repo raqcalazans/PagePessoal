@@ -11,4 +11,4 @@ Para acessar clique <a target="_blank" href="https://raqcalazans.github.io/proje
 
 ## Veja abaixo como o site ficou
 
-<img href="./img/site alura.png">
+<img src="img/site alura.png">
