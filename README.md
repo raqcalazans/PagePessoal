@@ -1,7 +1,9 @@
 # Projeto Alura
 Este site foi criado na imersão CSS da Alura que durou uma semana (5 dias).
 
-# Ferramentas utilizadas
+> Status do projeto: Concluído :heavy_check_mark:
+
+## Ferramentas utilizadas
 - HTML
 - CSS
 
