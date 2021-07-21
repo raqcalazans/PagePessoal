@@ -3,7 +3,7 @@ Este site foi criado na imersão CSS da Alura que durou uma semana (5 dias).
 
 > Status do projeto: Concluído :heavy_check_mark:
 
-## Ferramentas utilizadas
+## Tecnologias utilizadas
 - HTML
 - CSS
 
@@ -11,4 +11,4 @@ Este site foi criado na imersão CSS da Alura que durou uma semana (5 dias).
 
 <img src="img/site alura.png">
 
-Para acessar clique <a target="_blank" href="https://raqcalazans.github.io/projetoalura/">aqui</a>
+Para acessar clique <a target="_blank" href="https://raqcalazans.github.io/PagePessoalAlura/">aqui</a>
