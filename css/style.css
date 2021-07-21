@@ -246,7 +246,7 @@ a {
   height: 180px;
   width: 100%;
   object-fit: cover;
-  /* object-position: left bottom; */
+  object-position: top;
   /* transform: scale(1); */
   transition: transform 500ms;
 }
