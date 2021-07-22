@@ -1,4 +1,4 @@
-# Projeto Alura
+# Page Pessoal
 Este site foi criado na imersão CSS da Alura que durou uma semana (5 dias, de segunda a sexta).
 
 > Status do projeto: Concluído :heavy_check_mark:
