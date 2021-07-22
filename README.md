@@ -11,4 +11,4 @@ Este site foi criado na imersão CSS da Alura que durou uma semana (5 dias, de s
 
 <img src="img/site alura.png">
 
-Para acessar clique <a target="_blank" href="https://raqcalazans.github.io/PagePessoalAlura/">aqui.</a>
+Para acessar clique <a target="_blank" href="https://raqcalazans.github.io/PagePessoal/">aqui.</a>
